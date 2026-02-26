@@ -48,9 +48,67 @@ h1, h2, h3, h4, h5, h6, p {
     color: #535755;
 }
 
-.article-mb {
+.article-mb-1 {
     margin-bottom: 80px;
 }
+
+.article-mb-2{
+    margin-bottom: 40px;
+}
+
+.article-decor-wrapper {
+    position: relative;
+}
+
+.article-decor-wrapper::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 528px;
+    height: 48px;
+    background: url("../images/decor-icon.svg") no-repeat;
+}
+.article-decor-wrapper-1::before {
+    left: -350px;
+    top: 100px;
+}
+
+.article-decor-wrapper-2::before {
+    right: -350px;
+    bottom: 136px;
+}
+
+/* .article-decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.article-decor-1 {
+    left: -350px;
+    top: 100px;
+} */
+
+.article-play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3596ED;
+    border: none;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+}
+
+/* .article-decor-2 {
+    right: -350px;
+    bottom: 136px;
+} */
 
 .article-img {
     width: 100%;
@@ -58,14 +116,18 @@ h1, h2, h3, h4, h5, h6, p {
 
 .article-list {
     margin-top: 0;
-    padding-left: 14px;
+    padding-left: 18px;
 }
 
 .article-item {
     margin-bottom: 12px;
 }
 
-.article-video {
-    max-width: 100%;
-    margin-bottom: 40px;
+.article-item::marker {
+    color: #3596ED;
+    font-size: 22px;
 }
+
+/* .article-video {
+    max-width: 100%;
+} */
