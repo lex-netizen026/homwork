@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Практика по формам</title>
 		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./normalize.css">
 	</head>
 	<body>
 		<form class="form">
@@ -13,12 +14,12 @@
 				<label class="label">
 					Ваше имя
 					<input
+					  class="input"
 						type="text"
 						required
 						name="name"
 						value=""
 						placeholder="Имя"
-						class="input"
 					/>
 				</label>
 				<label class="label">
@@ -69,11 +70,11 @@
 					></textarea>
 				</label>
 			</fieldset>
-			<label class="checkbox">
-				<input type="checkbox" />
-				Я принимаю правила
+			<label class="label checkbox-label">
+				<input class="checkbox" type="checkbox" name="checkbox" required/>
+				<span class="checkbox-text">Я принимаю правила
+				</span>
 			</label>
 			<button class="button">Отправить</button>
-		</form>
 	</body>
 </html>
