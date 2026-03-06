@@ -6,9 +6,36 @@
 		<title>Fit Studio - Открытие нового филиала!</title>
 		<link rel="stylesheet" href="./css/normalize.css" />
 		<link rel="stylesheet" href="./css/font.css" />
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/footer.css">
 		<link rel="stylesheet" href="./css/article.css" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			sizes="128x128"
+			href="./images/favicon-icon.svg"
+		/>
 	</head>
 	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-inner">
+					<a href="/fit-studio/index.html">
+						<img
+							src="./images/logo-icon.svg"
+							width="84"
+							height="45"
+							alt="Логотип Fit Studio"
+						/>
+					</a>
+					<div class="phone">
+						<p class="phone-text">Первое посещение бесплатное</p>
+						<a class="phone-link" href="tel:+79282822882">+7(928)2822882</a>
+					</div>
+				</div>
+			</div>
+		</header>
 		<article class="article">
 			<div class="container">
 				<h1 class="article-title article-title-large">
@@ -58,7 +85,12 @@
 				<h2 class="article-title article-title-medium">Обзор нового филиала</h2>
 				<div class="article-decor-wrapper article-decor-wrapper-2 article-mb-2">
 					<button class="article-play-button">
-						<img src="./images/play-icon.svg" width="24" height="24" alt="Пуск">
+						<img
+							src="./images/play-icon.svg"
+							width="24"
+							height="24"
+							alt="Пуск"
+						/>
 					</button>
 					<img
 						class="article-img"
@@ -86,5 +118,31 @@
 				</p>
 			</div>
 		</article>
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<a class="footer-logo" href="#">
+						<img
+							src="./images/logo-icon.svg"
+							width="84"
+							height="45"
+							alt="Логотип Fit Studio"
+						/>
+					</a>
+          <nav class="menu">
+            <ul>
+              <li><a href="#">Клубы</a></li>
+              <li><a href="#">Тренировки</a></li>
+              <li><a href="#">Абонементы</a></li>
+              <li><a href="#">Программа лояльности</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+				</div>
+			</div>
+      <div class="container">
+        <p class="copyright">&copy; Copyright. Все права защищены</p>
+      </div>
+		</footer>
 	</body>
 </html>
