@@ -1,17 +1,3 @@
-.article-title {
-    max-width: 596px;
-    margin-bottom: 40px;
-    font-family: "Oswald";
-    font-weight: 600;
-    line-height: 115%;
-    text-transform: uppercase;
-    color: #2c332f;
-}
-
-.article-title-large {
-    font-size: 48px;
-}
-
 .article-title-medium {
     font-size: 36px;
 }
