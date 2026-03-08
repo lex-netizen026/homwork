@@ -62,11 +62,22 @@ a {
 	text-align: center;
 	color: #fff;
 	background: #3596ed;
-	transition: opacity 0.2s;
+	transition:
+		opacity 0.2s,
+		background-color 0.2s;
 }
 
 .button:hover {
 	opacity: 0.85;
+}
+
+.button:not(:disabled):active {
+	background-color: #2e82cb;
+}
+
+button.button:disabled {
+	opacity: 0.65;
+	cursor: default;
 }
 
 .title-large {
@@ -80,10 +91,26 @@ a {
 	font-size: 48px;
 }
 
+.title-medium {
+	font-family: "Oswald", sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 115%;
+	text-transform: uppercase;
+	color: #2c332f;
+}
+
 .text-sub {
 	font-weight: 300;
 	font-size: 14px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	color: #858e8a;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+	outline: 2px solid #3596ed;
+	outline-offset: 1px;
 }

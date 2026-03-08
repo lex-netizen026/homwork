@@ -44,16 +44,6 @@
     bottom: 136px;
 }
 
-/* .article-decor {
-    position: absolute;
-    z-index: -1;
-}
-
-.article-decor-1 {
-    left: -350px;
-    top: 100px;
-} */
-
 .article-play-button {
     display: flex;
     align-items: center;
@@ -69,12 +59,17 @@
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
+    transition: background-color 0.2s;
 }
 
-/* .article-decor-2 {
-    right: -350px;
-    bottom: 136px;
-} */
+.article-play-button:hover {
+    background-color: #45a8ff;
+}
+
+.article-play-button:not(:disabled):active {
+	background-color: #2e82cb;
+}
+
 
 .article-img {
     width: 100%;
@@ -93,7 +88,3 @@
     color: #3596ED;
     font-size: 22px;
 }
-
-/* .article-video {
-    max-width: 100%;
-} */
