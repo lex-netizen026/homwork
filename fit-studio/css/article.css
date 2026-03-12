@@ -1,15 +1,5 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
-.article-title-medium {
-	font-size: 36px;
-}
-
-.article-text {
+.article__text {
 	margin-bottom: 20px;
 	font-weight: 400;
 	font-size: 16px;
@@ -17,47 +7,65 @@
 	color: #535755;
 }
 
-.article-text:last-child {
+.article__text:last-child {
 	margin-bottom: 0;
 }
 
-.article-mb-1 {
+.article__mb-1 {
 	margin-bottom: 80px;
 }
 
-.article-mb-2 {
-	margin-bottom: 40px;
-}
-
-.article-decor-wrapper {
+.article__decor-wrapper {
 	position: relative;
 }
 
-.article-decor-wrapper-1::before {
+.article__decor-wrapper--1::before {
 	left: 0;
 	top: 100px;
 }
 
-.article-decor-wrapper-2::before {
+.article__title-medium {
+	font-size: 36px;
+}
+
+.article__decor-wrapper--2::before {
 	right: 0;
 	bottom: 136px;
 }
 
-.article-play-button {
+.article__list {
+	margin-top: 0;
+	padding-left: 18px;
+}
+
+.article__list-article-item:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.article__list-article-item::marker {
+	color: #3596ed;
+	font-size: 22px;
+}
+
+.article__mb-2 {
+	margin-bottom: 40px;
+}
+
+.article__play-button {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	background-color: #3596ed;
 	border: none;
 	padding: 0;
@@ -71,38 +79,24 @@
 	transition: background-color 0.2s;
 }
 
-.article-play-button:hover {
+.article__play-button:hover {
 	background-color: #45a8ff;
 }
 
-.article-play-button:not(:disabled):active {
+.article__play-button:not(:disabled):active {
 	background-color: #2e82cb;
 }
 
-.article-list {
-	margin-top: 0;
-	padding-left: 18px;
-}
-
-.article-item:not(:last-child) {
-	margin-bottom: 12px;
-}
-
-.article-item::marker {
-	color: #3596ed;
-	font-size: 22px;
-}
-
 @media (width <= 768px) {
-	.article-mb-1 {
+	.article__mb-1 {
 		margin-bottom: 60px;
 	}
 
-	.article-decor-wrapper::before {
+	.article__decor-wrapper::before {
 		display: none;
 	}
 
-	.article-title-medium {
+	.article__title-medium {
 		font-size: 32px;
 	}
 }
@@ -113,26 +107,25 @@
 		padding-bottom: 80px;
 	}
 
-	.article-title-medium {
+	.article__title-medium {
 		font-size: 28px;
 	}
 
-	.article-mb-1 {
+	.article__mb-1 {
 		margin-bottom: 40px;
 	}
 
-	.article-mb-2 {
+	.article__mb-2 {
 		margin-bottom: 30px;
 	}
 
-	.article-play-button {
+	.article__play-button {
 		width: 50px;
 		height: 50px;
 	}
 
-	.article-play-button img {
+	.article__play-button img {
 		width: 18px;
 		height: 18px;
 	}
-
 }

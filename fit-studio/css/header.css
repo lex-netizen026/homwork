@@ -1,11 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-.header-inner {
+.header__inner {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -21,15 +14,20 @@
 	border-bottom: 1px solid #d3cbd9;
 }
 
-.phone {
+.header__logo {
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+.header__phone {
 	text-align: right;
 }
 
-.phone p {
+.header__phone-text {
   margin-bottom: 8px;
 }
 
-.phone a {
+.header__phone-link {
 	font-weight: 500;
 	font-size: 18px;
 	color: #2c332f;
@@ -38,6 +36,6 @@
   transition: color 0.2s;
 }
 
-.phone a:hover {
+.header__phone-link:hover {
   color: #3596ED
 }
