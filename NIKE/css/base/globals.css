@@ -6,7 +6,6 @@
 
 .page__body {
 	min-width: 375px;
-  min-height: 200vh;
 	background-color: var(--bg-color);
 }
 
@@ -14,7 +13,7 @@
 	overflow-y: hidden;
 }
 
-.header__container {
+.container {
 	width: min(var(--container-width), 100% - var(--container-padding) * 2);
 	margin-inline: auto;
 }
