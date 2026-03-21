@@ -1,14 +1,22 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .page {
 	font-family: var(--font-family);
 	font-weight: 400;
 	color: var(--main-color);
 	scroll-behavior: smooth;
 	scroll-padding-top: 98px;
+	scrollbar-gutter: stable;
 }
 
 .page__body {
 	min-width: 375px;
-	min-height: 500vh;
+	/* min-height: 500vh; */
 	background-color: var(--bg-color);
 }
 
@@ -22,11 +30,13 @@
 }
 
 img {
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+input:focus {
 	outline: 1px solid var(--accent-color);
 	outline-offset: 2px;
 }

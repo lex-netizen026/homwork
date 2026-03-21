@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .hero {
 	position: relative;
 }
@@ -16,8 +23,13 @@
 
 .hero__container {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	/* min-width 375px, max-width 922px */
 	min-height: clamp(433px, 13.823rem + 56.49vw, 742px);
 }
@@ -35,27 +47,45 @@
 }
 
 .hero__header {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+
+	    -ms-flex-positive: 1;
+
+	        flex-grow: 1;
 }
 
 @media (width > 768px) {
 	.hero__header {
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 }
 
 @media (width <= 768px) {
 	.hero__header {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 }
 
 .hero__benefit-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	gap: 5px;
 }
 
@@ -87,8 +117,12 @@
 }
 
 .hero__title {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	/* min-width 375px, max-width 1920px */
 	gap: clamp(8px, 0.09rem + 1.75vw, 35px);
 	font-weight: 600;
@@ -119,7 +153,9 @@
 	top: 88px;
 	z-index: var(--layer-negative);
 	left: 50%;
-	transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+	    -ms-transform: translate(-50%);
+	        transform: translate(-50%);
 }
 
 .hero__footer {
@@ -128,8 +164,12 @@
 }
 
 .hero__details {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	gap: 15px;
 	font-weight: 400;
 	font-size: 16px;
@@ -137,6 +177,8 @@
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: var(--main-color);
+	-webkit-transition: color var(--transition-time);
+	-o-transition: color var(--transition-time);
 	transition: color var(--transition-time);
 }
 
