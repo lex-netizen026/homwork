@@ -1,0 +1,16 @@
+/* base */
+@import "./base/normalize.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "./base/globals.css";
+/* blocks */
+@import "./blocks/header.css";
+@import "./blocks/hero.css";
+@import "./blocks/our-halls.css";
+@import "./blocks/our-advantages.css";
+@import "./blocks/how-to-book.css";
+@import "./blocks/faq.css";
+@import "./blocks/footer.css";
+@import "./blocks/modal.css";
+@import "./blocks/modal-map.css";
+@import "./blocks/modal-book.css";

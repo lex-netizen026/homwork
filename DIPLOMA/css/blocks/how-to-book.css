@@ -1,0 +1,186 @@
+.how-to-book__container {
+	position: relative;
+	max-width: 100%;
+	height: 1000px;
+	background-image: url(../../images/how-to-book-background.png);
+	background-size: 100% 1000px;
+}
+
+.how-to-book__wrapper {
+	margin-left: 51px;
+}
+
+.announcement__steps {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.steps__show {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 28px;
+}
+
+.steps__show::before {
+	content: "";
+	display: block;
+
+	background: url(../../icons/our-halls-arrow-left-icon.svg) center / 20px
+		no-repeat;
+
+	border: 1px solid #282b32;
+	border-radius: 100%;
+	width: 70px;
+	height: 70px;
+	background-color: #2e3441;
+	flex-shrink: 0;
+}
+
+.steps__show::after {
+	content: "";
+	display: block;
+
+	background: url(../../icons/our-halls-arrow-left-icon.svg) center / 20px
+		no-repeat;
+	transform: rotate(180deg);
+
+	border: 1px solid #282b32;
+	border-radius: 100%;
+	width: 70px;
+	height: 70px;
+	background-color: #2e3441;
+	flex-shrink: 0;
+}
+
+.steps__show span {
+	color: #fff;
+}
+
+.how-to-book__title {
+  margin-top: 109px;
+}
+
+.announcement {
+	margin-top: 13px;
+	margin-right: 50px;
+}
+
+.swiper-wrapper {
+	margin-top: 56px;
+}
+
+.swiper-container {
+  display: flex;
+	justify-content: space-between;
+}
+
+.swiper-slide {
+	max-width: 252px;
+}
+
+.swiper-slide__inner {
+	position: relative;
+	margin-bottom: 37px;
+}
+
+.swiper-slide__inner--active::after {
+  position: absolute;
+	content: "3";
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 350%;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: #fff;
+	display: block;
+  width: 61px;
+  height: 61px;
+	border-radius: 100%;
+	background-color: #f69020;
+	box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15);
+  left: 228px;
+  top: -20px;
+}
+
+.swiper-slide__inner--active::before {
+	position: absolute;
+	content: "";
+	display: block;
+	background-image: url(../../images/how-to-book/ipone-frame.svg);
+	width: 285px;
+	height: 505px;
+	left: -16px;
+	bottom: -9px;
+}
+
+.swiper-slide__description-1 {
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	grid-template-rows: repeat(2, 1fr);
+
+}
+
+.description__span {
+	padding-left: 50px;
+}
+
+.swiper-slide__description-2,
+.swiper-slide__description-3,
+.swiper-slide__description-4,
+.swiper-slide__description-5,
+.swiper-slide__description-6
+ {
+  display: flex;
+	flex-direction: row;
+  align-items: center;
+	justify-content: start;
+  flex-wrap: nowrap;
+  gap: 18px;
+}
+
+.swiper-slide__description-1::before {
+  content: "";
+  display: block;
+  background: url(../../icons/how-to-book-icons/enter-icon.svg);
+  width: 32px;
+  height: 32px;
+	flex-shrink: 0;
+}
+
+.swiper-slide__description-2::before {
+  content: "";
+  display: block;
+  background: url(../../icons/how-to-book-icons/crowd-icon.svg);
+  width: 41px;
+  height: 41px;
+	flex-shrink: 0;
+}
+
+.swiper-slide__description-3::before {
+  content: "";
+  display: block;
+  background: url(../../icons/how-to-book-icons/time-icon.svg);
+  width: 41px;
+  height: 41px;
+	flex-shrink: 0;
+}
+
+.swiper-slide__description-4::before {
+  content: "";
+  display: block;
+  background: url(../../icons/how-to-book-icons/calendar-icon.svg);
+  width: 38px;
+  height: 38px;
+	flex-shrink: 0;
+}
+
+.swiper-slide__description-5::before {
+  content: "";
+  display: block;
+  background: url(../../icons/how-to-book-icons/stopwatch-icon.svg);
+  width: 41px;
+  height: 41px;
+	flex-shrink: 0;
+}

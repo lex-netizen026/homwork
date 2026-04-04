@@ -1,0 +1,48 @@
+.footer-container {
+	position: relative;
+	max-width: 100%;
+	height: 251px;
+	background: url(../../images/footer-background.png);
+	background-size: 100% 251px;
+}
+
+.footer-frontier {
+	margin: 91px 204px 93px 45px;
+}
+
+.footer__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__text {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 17px;
+}
+
+
+.footer__text::before {
+	content: "";
+	display: block;
+	flex-shrink: 0;
+
+	background:
+		url(../../icons/footer-calendar-icon.svg) center / 24px no-repeat,
+		#ffffff12;
+
+	border-radius: 40px;
+	width: 60px;
+	height: 60px;
+}
+
+.footer__button {
+	border: 1px solid #f69020;
+	border-radius: 40px;
+	width: 232px;
+	height: 60px;
+	background-color: #ffffff00;
+}

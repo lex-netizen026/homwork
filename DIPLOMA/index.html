@@ -1,0 +1,699 @@
+<!doctype html>
+<html class="page" lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="shortcut icon" href="./icons/favicon.png" type="image/png" />
+		<script defer src="./js/index.js" type="module"></script>
+		<title>Diploma</title>
+	</head>
+	<body class="page__body">
+		<header class="header">
+			<div class="container">
+				<div class="header__frontier">
+					<div class="header__wrapper" id="header__wrapper">
+						<a class="logo header__logo" href="#">
+							<img
+								class="logo__img"
+								src="./icons/logo.svg"
+								width="293"
+								height="67"
+								alt="Логотип караоке-бар Харизма"
+							/>
+						</a>
+						<div class="header__container" id="header__wrapper">
+							<div class="info header__info">
+								<div class="header__info-left">
+									<ul class="info__left-list">
+										<li class="info__phone">
+											<a
+												class="info__link regular-15-fff"
+												href="tel:+380979709090"
+												>+38 (097) 970-90-90
+											</a>
+										</li>
+										<li
+											class="info__map"
+											data-modal-link="map"
+											data-modal-speed="300"
+											id="point"
+										>
+											<a class="info__link regular-15-fff" href="#point"
+												>м. Лубянка</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="header__info-right">
+									<ul class="info__right-list">
+										<li class="info__item-border--background">
+											<button class="info__link bold-13--fff" href="#">
+												Наши&nbsp;залы
+											</button>
+										</li>
+										<li class="info__item-border--white">
+											<button
+												class="info__button bold-13--000"
+												data-modal-link="book"
+												data-modal-speed="300"
+												
+											>
+												Забронировать
+											</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="header__info-burger burger">
+							<div class="burger-inner">
+								<a href="#" class="menu__map-link" data-modal-link="map">
+									<img src="./icons/map-point-link.png" alt="Map" />
+								</a>
+								<button
+									class="info__burger"
+									aria-label="Открыть меню"
+									aria-expanded="false"
+									aria-controls="header__wrapper"
+								>
+									<svg width="29" height="24">
+										<use
+											class="burger__icon-menu"
+											href="./icons/first-sprite.svg#burger"
+										></use>
+										<use
+											class="burger__icon-cross"
+											href="./icons/first-sprite.svg#cross"
+										></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="first-screen container">
+				<img
+					class="karaoke"
+					width="1920"
+					height="1077"
+					src="../DIPLOMA/images/background.png"
+					alt=""
+				/>
+				<div class="hero__container">
+					<img
+						class="hero__ability-label"
+						src="../DIPLOMA/images/ability-label.png"
+						alt="Можно шуметь круглосуточно"
+					/>
+					<img
+						class="hero__girl-image"
+						src="./images/dancing-girl.png"
+						width="700px"
+						height="1247px"
+						alt="Танцующая девушка"
+					/>
+					<h1 class="hero__title regular-41-fff">
+						Арендуй Караоке-Зал до 10 человек
+					</h1>
+					<h2 class="hero__advertisement black-75-fff">
+						возьми алкоголь и еду с собой
+						<span class="hero__advertisement-place regular-15-fff"
+							>м. Лубянка</span
+						>
+					</h2>
+					<div class="hero__goals">
+						<ul class="hero__goals-list regular-18-fff">
+							<li class="hero__goal-item">Если хочешь попеть и оторваться</li>
+							<li class="hero__goal-item">Отдохнуть<br />после работы</li>
+							<li class="hero__goal-item">Хорошо<br />провести время</li>
+						</ul>
+					</div>
+					<button
+						class="hero__book-button bold-13-252121"
+						data-modal-link="book"
+						data-modal-speed="300"
+						title="Забронировать онлайн"
+						aria-label="Забронировать онлайн"
+					>
+						Забронировать онлайн
+					</button>
+					<p class="hero__text bold-9-606571">Листайте вниз</p>
+					<a class="hero__link bold-9-f69020" href="#">Связаться с нами</a>
+				</div>
+				<div class="hero__advantages">
+					<ul class="advantages__list">
+						<li class="advantages__item hero-item--1 regular-16-fff">
+							<span class="hyphen"></span>
+							Профессиональное караоке AST-50
+						</li>
+						<li class="advantages__item hero-item--2 regular-16-fff">
+							<span class="hyphen"></span>Без пробкового сбора
+						</li>
+						<li class="advantages__item hero-item--3 regular-16-fff">
+							<span class="hyphen"></span>Без депозита
+						</li>
+						<li class="advantages__item hero-item--4 regular-16-fff">
+							<span class="hyphen"></span>
+							Скидка в День Рождения
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="our-halls">
+				<div class="container our-halls__container">
+					<h2 class="our-halls__title">Наши залы</h2>
+					<div class="our-halls__wrapper">
+						<aside class="our-halls__aside">
+							<h3 class="our-halls__notification regular-24-fff">
+								Ознакомтесь с атмосферой праздника
+							</h3>
+							<nav class="our-halls__choose bold-15-606571">
+								<ul class="choose__list">
+									<li class="choose__item">Hall №1</li>
+									<li class="choose__item">Hall №2</li>
+									<li class="choose__item">Hall №3</li>
+									<li class="choose__item">Hall №4</li>
+									<li class="choose__item">Hall №5</li>
+								</ul>
+							</nav>
+							<ul class="our-halls__description regular-18-fff">
+								<li class="description__item--1">№ 1</li>
+								<li class="description__item--2">40 м2</li>
+								<li class="description__item--3">до 20-ти человек</li>
+							</ul>
+							<p class="our-halls__show medium-24-fff"><span>1</span>из 5</p>
+							<button
+								class="our-halls__button bold-13-252121"
+								data-modal-link="book"
+								data-modal-speed="300"
+							>
+								Забронировать
+							</button>
+						</aside>
+						<main class="our-halls__main">
+							<div class="our-halls__inner">
+								<div class="our-halls__current-hall" style="grid-area: one">
+									<img
+										src="../DIPLOMA/images/our-halls/current-hall-short.png"
+										width="1459"
+										height="832"
+										alt=""
+									/>
+								</div>
+								<div class="our-hall__current-hall" style="grid-area: two">
+									<img
+										src="../DIPLOMA/images/our-halls/rest-hall-1.png"
+										width="281"
+										height="168"
+										alt=""
+									/>
+								</div>
+								<div class="our-hall__current-hall" style="grid-area: tree">
+									<img
+										src="../DIPLOMA/images/our-halls/rest-hall-2.png"
+										width="281"
+										height="168"
+										alt=""
+									/>
+								</div>
+								<div class="our-hall__current-hall" style="grid-area: four">
+									<img
+										src="../DIPLOMA/images/our-halls/rest-hall-3.png"
+										width="281"
+										height="168"
+										alt=""
+									/>
+								</div>
+								<div class="our-hall__current-hall" style="grid-area: five">
+									<img
+										src="../DIPLOMA/images/our-halls/rest-hall-4.png"
+										width="281"
+										height="168"
+										alt=""
+									/>
+								</div>
+								<div class="our-hall__current-hall" style="grid-area: six">
+									<img
+										src="../DIPLOMA/images/our-halls/rest-hall-5.png"
+										width="281"
+										height="168"
+										alt=""
+									/>
+								</div>
+							</div>
+						</main>
+					</div>
+				</div>
+			</section>
+			<section class="our-halls-new">
+				<div class="container our-halls__container">
+					<h2 class="our-halls__title black-75-fff--less">Наши залы</h2>
+					<div class="our-halls-new__wrapper">
+						<div class="new-wrapper__grid" style="grid-area: one">
+							<h3 class="our-halls__notification regular-24-fff">
+								Ознакомтесь с атмосферой праздника
+							</h3>
+						</div>
+						<div class="new-wrapper__grid" style="grid-area: two">
+							<nav class="our-halls__choose bold-15-606571">
+								<ul class="choose__list">
+									<li class="choose__item">Hall №1</li>
+									<li class="choose__item">Hall №2</li>
+									<li class="choose__item">Hall №3</li>
+									<li class="choose__item">Hall №4</li>
+									<li class="choose__item">Hall №5</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="new-wrapper__grid" style="grid-area: three">
+							<ul class="our-halls__description regular-18-fff">
+								<li class="description__item--1">№ 1</li>
+								<li class="description__item--2">40 м2</li>
+								<li class="description__item--3">до 20-ти человек</li>
+							</ul>
+						</div>
+						<div class="new-wrapper__grid" style="grid-area: four">
+							<p class="our-halls__show medium-24-fff"><span>1</span>из 5</p>
+						</div>
+						<div class="new-wrapper__grid" style="grid-area: five">
+							<button
+								class="our-halls__button bold-13-252121"
+								data-modal-link="book"
+								data-modal-speed="300"
+							>
+								Забронировать
+							</button>
+						</div>
+						<div class="new-wrapper__grid-bp" style="grid-area: six"></div>
+						<div
+							class="new-wrapper__grid-sp-1 hall"
+							style="grid-area: seven"
+						></div>
+						<div
+							class="new-wrapper__grid-sp-2 hall"
+							style="grid-area: eight"
+						></div>
+						<div
+							class="new-wrapper__grid-sp-3 hall"
+							style="grid-area: nine"
+						></div>
+						<div
+							class="new-wrapper__grid-sp-4 hall"
+							style="grid-area: ten"
+						></div>
+						<div
+							class="new-wrapper__grid-sp-5 hall"
+							style="grid-area: eleven"
+						></div>
+					</div>
+				</div>
+			</section>
+			<section class="our-advantages">
+				<div class="container our-advantages__container">
+					<div class="our-advantages__wrapper">
+						<h2 class="our-advantages__title" style="grid-area: one">
+							Наши преимущества
+						</h2>
+						<h3
+							class="our-advantages__question regular-24-fff"
+							style="grid-area: two"
+						>
+							Почему гости выбирают нас
+						</h3>
+						<div class="our-advantages__card" style="grid-area: three">
+							<p class="our-advantages__card-text oa-text-1 extra-bold-18-fff">
+								Никакого дресс-контроля
+							</p>
+						</div>
+						<div class="our-advantages__card" style="grid-area: four">
+							<p class="our-advantages__card-text oa-text-2 extra-bold-18-fff">
+								~ 40.000 песен в сет листе
+							</p>
+							<p class="card-text__addition regular-16-c5c5c5">
+								Более 50,000 студийных фонограмм
+							</p>
+							<p class="card-text__addition regular-16-c5c5c5">
+								Ежемесячное обновления репертуара
+							</p>
+						</div>
+						<div class="our-advantages__card" style="grid-area: five">
+							<p class="our-advantages__card-text oa-text-3 extra-bold-18-fff">
+								Индивидуальные залы
+							</p>
+							<p class="card-text__addition regular-16-c5c5c5">
+								Только Ваша компания
+							</p>
+						</div>
+						<div class="our-advantages__card" style="grid-area: six">
+							<p class="our-advantages__card-text oa-text-4 extra-bold-18-fff">
+								Без депозита
+							</p>
+							<p class="card-text__addition regular-16-c5c5c5">
+								<span class="advantages__span">Мы не берем депозит</span>
+							</p>
+							<p class="card-text__addition regular-16-c5c5c5">
+								Оплата происходит за человека в час
+							</p>
+						</div>
+						<div class="our-advantages__card" style="grid-area: seven">
+							<p class="our-advantages__card-text oa-text-5 extra-bold-18-fff">
+								В самом центре Москвы
+							</p>
+							<p class="card-text__addition regular-16-c5c5c5">м. Лубянка</p>
+						</div>
+						<div class="our-advantages__card" style="grid-area: eight">
+							<p class="our-advantages__card-text oa-text-6 extra-bold-18-fff">
+								Нет пробкового сбора
+							</p>
+							<p class="card-text__addition regular-16-c5c5c5">
+								Можно приносить с собой еду, напитки и алкоголь<span
+									class="advantages__span"
+								>
+									без пробкового сбора</span
+								>
+							</p>
+						</div>
+						<div
+							class="our-advantages__microphone"
+							style="grid-area: nine"
+						></div>
+						<button
+							class="our-advantages__button"
+							data-modal-link="book"
+							data-modal-speed="300"
+							style="grid-area: ten"
+						>
+							Забронировать зал
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="how-to-book">
+				<div class="container how-to-book__container">
+					<div class="how-to-book__wrapper">
+						<h2 class="how-to-book__title black-75-fff--less">
+							Как забронировать зал?
+						</h2>
+						<div class="announcement">
+							<div class="announcement__steps">
+								<h3 class="steps__description regular-24-fff">
+									бронирование по шагам в чат-боте
+								</h3>
+								<p class="steps__show medium-24-fff"><span>1</span>из 9</p>
+							</div>
+						</div>
+						<div class="swiper-wrapper">
+							<div class="swiper-container">
+								<div class="swiper-slide">
+									<div class="swiper-slide__inner">
+										<img
+											src="../../DIPLOMA/images/how-to-book/step-1.png"
+											class="swiper-slide__imege"
+											width="252"
+											height="489"
+											alt="Первый шаг - Перейти в чат-бот fh_harizma_bot"
+										/>
+									</div>
+									<p
+										class="swiper-slide__description-1 medium-15-fff"
+										style="grid-area: 1"
+									>
+										Перейти в чат-бот<span
+											class="description__span medium-15-f69020"
+										>
+											fh_harizma_bot</span
+										>
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__inner">
+										<img
+											src="../../DIPLOMA/images/how-to-book/step-2.png"
+											class="swiper-slide__imege"
+											width="252"
+											height="489"
+											alt="Первый шаг - Перейти в чат-бот fh_harizma_bot"
+										/>
+									</div>
+									<p class="swiper-slide__description-2 medium-15-fff">
+										Выбрать колличество человек
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__inner swiper-slide__inner--active">
+										<img
+											src="../../DIPLOMA/images/how-to-book/step-3.png"
+											class="swiper-slide__imege"
+											width="252"
+											height="489"
+											alt="Первый шаг - Перейти в чат-бот fh_harizma_bot"
+										/>
+									</div>
+									<p class="swiper-slide__description-3 medium-15-fff">
+										Выбрать колличество часов посещения
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__inner">
+										<img
+											src="../../DIPLOMA/images/how-to-book/step-4.png"
+											class="swiper-slide__imege"
+											width="252"
+											height="489"
+											alt="Первый шаг - Перейти в чат-бот fh_harizma_bot"
+										/>
+									</div>
+									<p class="swiper-slide__description-4 medium-15-fff">
+										Выбрать дату
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__inner">
+										<img
+											src="../../DIPLOMA/images/how-to-book/step-5.png"
+											class="swiper-slide__imege"
+											width="252"
+											height="489"
+											alt="Первый шаг - Перейти в чат-бот fh_harizma_bot"
+										/>
+									</div>
+									<p class="swiper-slide__description-5 medium-15-fff">
+										Выбрать время старта брони
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__inner">
+										<img
+											src="../../DIPLOMA/images/how-to-book/step-6.png"
+											class="swiper-slide__imege"
+											width="56"
+											height="489"
+											alt="Первый шаг - Перейти в чат-бот fh_harizma_bot"
+										/>
+									</div>
+									<p class="swiper-slide__description-1 medium-15-fff"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faq-section">
+				<div class="container faq-container">
+					<div class="faq-section__wrapper">
+						<h2 class="faq-title black-75-fff--less">Вопросы и ответы</h2>
+						<h3 class="faq-description regular-24-fff">
+							Мы подготовили ответы на часто задаваемые вопросы
+						</h3>
+						<div class="faq-inner">
+							<div class="faq-accordion">
+								<details class="faq__details" name="faq" open>
+									<summary class="faq__summary extra-bold-18-fff">
+										Какое у вас караоке?
+									</summary>
+									<p class="faq__text">
+										Более 50,000 студийных фонограмм. Из них 80% - оригинальные
+										минусовки в качестве PRO (mp3 - WAV). Ежемесячное обновления
+										репертуара. Более 10,000 специальных фонограмм в
+										сопровождении оригинальных видеоклипов.
+									</p>
+								</details>
+								<details class="faq__details" name="faq" open>
+									<summary class="faq__summary extra-bold-18-fff">
+										Есть ли у вас английские песни?
+									</summary>
+									<p class="faq__text">
+										Далеко-далеко за словесными горами в стране гласных и
+										согласных живут рыбные тексты. Подпоясал сих силуэт деревни
+										взобравшись бросил пунктуация даль гор буквоград.
+									</p>
+								</details>
+								<details class="faq__details" name="faq" open>
+									<summary class="faq__summary extra-bold-18-fff">
+										Можно ли подключить телефон?
+									</summary>
+									<p class="faq__text">
+										Далеко-далеко за словесными горами в стране гласных и
+										согласных живут рыбные тексты. Подпоясал сих силуэт деревни
+										взобравшись бросил пунктуация даль гор буквоград.
+									</p>
+								</details>
+								<details class="faq__details" name="faq" open>
+									<summary class="faq__summary extra-bold-18-fff">
+										Можно ли подключить телефон?
+									</summary>
+									<p class="faq__text">
+										Далеко-далеко за словесными горами в стране гласных и
+										согласных живут рыбные тексты. Подпоясал сих силуэт деревни
+										взобравшись бросил пунктуация даль гор буквоград.
+									</p>
+								</details>
+								<details class="faq__details" name="faq" open>
+									<summary class="faq__summary extra-bold-18-fff">
+										Есть ли оплата картой?
+									</summary>
+									<p class="faq__text">
+										Далеко-далеко за словесными горами в стране гласных и
+										согласных живут рыбные тексты. Подпоясал сих силуэт деревни
+										взобравшись бросил пунктуация даль гор буквоград.
+									</p>
+								</details>
+								<details class="faq__details" name="faq" open>
+									<summary class="faq__summary extra-bold-18-fff">
+										Можно приность с собой алкоголь и еду?
+									</summary>
+									<p class="faq__text">
+										Далеко-далеко за словесными горами в стране гласных и
+										согласных живут рыбные тексты. Подпоясал сих силуэт деревни
+										взобравшись бросил пунктуация даль гор буквоград.
+									</p>
+								</details>
+								<details class="faq__details" name="faq" open>
+									<summary class="faq__summary extra-bold-18-fff">
+										Как расчитывается стоимость?
+									</summary>
+									<p class="faq__text">
+										Далеко-далеко за словесными горами в стране гласных и
+										согласных живут рыбные тексты. Подпоясал сих силуэт деревни
+										взобравшись бросил пунктуация даль гор буквоград.
+									</p>
+								</details>
+							</div>
+							<div class="faq-addition">
+								<p class="faq-addition__carpet black-32-fff">
+									В нашем заведении Бельгийский ковролин. На входе выдают
+									индивидуально запакованные тапочки, в которые необходимо
+									переобуться.
+								</p>
+								<button
+									class="faq__button"
+									style="grid-area: ten"
+									data-modal-link="book"
+									data-modal-speed="300"
+								>
+									Забронировать зал
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="overlay"></div>
+		</main>
+		<footer class="footer">
+			<div class="container footer-container">
+				<div class="footer-frontier">
+					<div class="footer__inner">
+						<a class="logo footer__logo" href="#">
+							<img
+								class="logo__img"
+								src="./icons/logo.svg"
+								width="293"
+								height="67"
+								alt="Логотип караоке-бар Харизма"
+							/>
+						</a>
+						<a class="info__phone regular-15-fff" href="tel:+380979709090"
+							>+38 (097) 970-90-90
+						</a>
+						<p class="footer__text">Пн — Вс круглосуточно</p>
+						<a
+							class="info__map regular-15-fff"
+							data-modal-link="map"
+							data-modal-speed="300"
+							id="point"
+							href="#point"
+							>м. Лубянка, ул. Сретенский переулок, 4
+						</a>
+						<button class="footer__button bold-13--fff" href="#">
+							Построить маршрут
+						</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="modal">
+			<div class="modal__window modal-map" data-modal-window="map">
+				<button
+					class="modal__close"
+					aria-label="Закрыть"
+					title="Закрыть"
+					data-modal-close
+				>
+					<svg width="22" height="22">
+						<use href="../DIPLOMA/icons/first-sprite.svg#cross"></use>
+					</svg>
+				</button>
+				<div class="modal__content modal-map__content">
+					<h3 class="modal-map__title title-sm">Наше месторасположение</h3>
+					<h4 class="modal-map__title bold-9-f69020">
+						Кликните на карту что-бы открыть Яндекс-карты
+					</h4>
+					<a
+						href="https://yandex.ru/maps/?um=constructor%3Aeb01d393ba5a0762af3d09014a15f5ca863d2e15f8d94b5cedbfeff666690209&amp;source=constructorStatic"
+						target="_blank"
+						><img
+							src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Aeb01d393ba5a0762af3d09014a15f5ca863d2e15f8d94b5cedbfeff666690209&amp;width=500&amp;height=400&amp;lang=ru_RU"
+							alt=""
+							style="border: 0"
+							width="100%"
+							height="400"
+							loading="lazy"
+						/>/></a
+					>
+				</div>
+			</div>
+			<div class="modal__window modal-book" data-modal-window="book">
+				<button
+					class="modal__close"
+					aria-label="Закрыть"
+					title="Закрыть"
+					data-modal-close
+				>
+					<svg width="24" height="24">
+						<use href="../DIPLOMA/icons/first-sprite.svg#cross"></use>
+					</svg>
+				</button>
+				<div class="modal__content modal-book__content">
+					<h3 class="modal-book__title title-sm">Заявка на заказ</h3>
+					<form class="modal-book__form">
+						<label class="modal-book__label">
+							<input
+								class="modal-book__input"
+								type="tel"
+								placeholder="Номер телефона"
+								name="tel"
+								required
+							/>
+						</label>
+						<button class="modal-book__submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

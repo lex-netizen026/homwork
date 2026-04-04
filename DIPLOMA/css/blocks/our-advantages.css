@@ -1,0 +1,179 @@
+.our-advantages__container {
+	position: relative;
+	max-width: 100%;
+	min-height: 1042px;
+	background-image: url(../../images/our-advantages-backgrond.png);
+	background-size: 100% 1042px;
+}
+
+.our-advantages__wrapper {
+	margin-left: 51px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		"one one one one"
+		"two two two nine"
+		"three four five nine"
+		"six seven eight nine"
+		"six seven eight ten";
+}
+
+@media (width <= 992px) {
+	.our-advantages__wrapper {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"one one"
+			"two two"
+			"three four"
+			"five four"
+      "five seven"
+      "six seven"
+      "six eight"
+      "nine eight"
+      "nine eight"
+			"ten ten";
+    justify-items: center;
+	}
+}
+
+.our-advantages__title {
+	margin-top: 97px;
+	font-weight: 900;
+	font-size: 75px;
+	line-height: 109%;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.our-advantages__question {
+	margin-top: 33px;
+}
+
+.our-advantages__card {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-top: 50px;
+	width: 433px;
+	height: 298px;
+	background-color: var(--bg-color-burger-menu);
+	margin-top: 30px;
+	margin-right: 30px;
+	padding-left: 51px;
+}
+
+.oa-text-1::before {
+	content: "";
+	display: block;
+	background: url(../../icons/dress-icon.svg);
+	width: 80px;
+	height: 80px;
+	margin-bottom: 30px;
+}
+
+.oa-text-2::before {
+	content: "";
+	display: block;
+	background: url(../../icons/cd-icon.svg);
+	width: 86px;
+	height: 86px;
+	margin-bottom: 30px;
+}
+
+.oa-text-3::before {
+	content: "";
+	display: block;
+	background: url(../../icons/party-icon.svg);
+	width: 80px;
+	height: 80px;
+	margin-bottom: 30px;
+}
+
+.oa-text-4::before {
+	content: "";
+	display: block;
+	background: url(../../icons/cash-icon.svg);
+	width: 68px;
+	height: 64px;
+	margin-bottom: 30px;
+}
+
+.oa-text-5::before {
+	content: "";
+	display: block;
+	background: url(../../icons/goal-icon.svg);
+	width: 86px;
+	height: 86px;
+	margin-bottom: 30px;
+}
+
+.oa-text-6::before {
+	content: "";
+	display: block;
+	background: url(../../icons/champagne-icon.svg);
+	width: 62px;
+	height: 62px;
+	margin-bottom: 30px;
+}
+
+.advantages__span {
+	color: #f69020;
+}
+
+.card-text__addition {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+/* .card-text__addition--another {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+} */
+
+.card-text__addition::before,
+.card-text__addition--another::before {
+	content: "";
+	display: block;
+	background: url(../../icons/check-icon.svg);
+	width: 16px;
+	height: 16px;
+}
+
+.our-advantages__microphone {
+	position: relative;
+	width: 450px;
+	min-height: 684px;
+	background-image: url(../../images/microphone-image.png);
+	background-size: 100% 684px;
+	flex-shrink: 0;
+}
+
+.our-advantages__button {
+	border-radius: 60px;
+	width: 277px;
+	height: 70px;
+	background: linear-gradient(141deg, #ea422a 0%, #f69020 47.92%, #ffc619 100%);
+	transition: color var(--transition-time);
+	margin-left: 109px;
+	margin-top: 45px;
+}
+
+@media (width <= 992px) {
+  .our-advantages__button {
+    width: 323px;
+  }
+}
+
+@media (any-hover: hover) {
+	.our-advantages__button:hover {
+		color: var(--main-color);
+	}
+}

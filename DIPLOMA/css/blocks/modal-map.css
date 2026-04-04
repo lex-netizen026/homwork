@@ -1,0 +1,38 @@
+
+
+@media (width > 576px) {
+  .modal-map {
+    width: min(2000px, 80%);
+  }
+}
+
+.modal-map__content {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+@media (width > 576px) {
+  .modal-map__title {
+    margin-bottom: 56px;
+  }
+}
+
+@media (width <= 576px) {
+  .modal-map__title {
+    margin-bottom: 36px;
+  }
+}
+
+.modal-map__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.modal-map__label {
+  margin-bottom: 16px;
+}
