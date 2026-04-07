@@ -55,14 +55,14 @@
 @media (width > 576px) {
   .modal-book__input {
     padding: 20px 24px;
-    font-size: 16px;
+    font-size: 25px;
   }
 }
 
 @media (width <= 576px) {
   .modal-book__input {
     padding: 14px 18px;
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 

@@ -6,8 +6,77 @@
 	background-size: 100% 1000px;
 }
 
+@media (width <= 768px) {
+	.how-to-book__container {
+		height: 1050px;
+	}
+}
+
 .how-to-book__wrapper {
 	margin-left: 51px;
+	min-width: 100%;
+	
+}
+
+@media (width <= 768px) {
+	.how-to-book__wrapper {
+		margin-left: 0;
+	}
+}
+
+
+.how-to-book__title {
+  margin-top: 109px;
+}
+
+@media (width <= 1300px) {
+	.how-to-book__title {
+		font-size: 55px;
+	}
+}
+
+@media (width <= 992px) {
+	.how-to-book__title {
+		font-size: 45px;
+		max-width: 650px;
+	}
+}
+
+@media (width <= 768px) {
+	.how-to-book__title {
+		max-width: 500px;
+	}
+}
+
+@media (width <= 576px) {
+	.how-to-book__title {
+		font-size: 36px;
+		max-width: 437px;
+	}
+}
+
+@media (width <= 576px) {
+	.how-to-book__title {
+		width: 100%;
+	}
+}
+
+
+@media (width <= 768px) {
+	.steps__description {
+		font-size: 21px;
+	}
+}
+
+@media (width <= 576px) {
+	.steps__description {
+		font-size: 18px;
+	}
+}
+
+.announcement {
+	margin-top: 13px;
+	margin-right: 50px;
 }
 
 .announcement__steps {
@@ -16,14 +85,34 @@
 	justify-content: space-between;
 }
 
-.steps__show {
+.steps__show,
+.steps__show--bottom {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 28px;
 }
 
-.steps__show::before {
+.steps__show--bottom {
+	justify-content: flex-start;
+	flex-shrink: 0;
+	
+}
+
+@media (width <= 992px) {
+	.steps__show {
+		display: none;
+	}
+}
+
+@media (width > 992px) {
+	.steps__show--bottom {
+		display: none;
+	}
+}
+
+.steps__show::before,
+.steps__show--bottom::before {
 	content: "";
 	display: block;
 
@@ -38,7 +127,8 @@
 	flex-shrink: 0;
 }
 
-.steps__show::after {
+.steps__show::after,
+.steps__show--bottom::after {
 	content: "";
 	display: block;
 
@@ -58,14 +148,7 @@
 	color: #fff;
 }
 
-.how-to-book__title {
-  margin-top: 109px;
-}
 
-.announcement {
-	margin-top: 13px;
-	margin-right: 50px;
-}
 
 .swiper-wrapper {
 	margin-top: 56px;
@@ -74,6 +157,7 @@
 .swiper-container {
   display: flex;
 	justify-content: space-between;
+	gap: 20px;
 }
 
 .swiper-slide {
@@ -81,11 +165,17 @@
 }
 
 .swiper-slide__inner {
-	position: relative;
+	/* position: relative; */
 	margin-bottom: 37px;
+	background-image: url(../../images/how-to-book/step-1.png);
+	width: 252px;
+	height: 489px;
+	background-size: 100% 489px;
 }
 
-.swiper-slide__inner--active::after {
+
+
+/* .swiper-slide__inner--active::after {
   position: absolute;
 	content: "3";
 	font-weight: 700;
@@ -102,9 +192,9 @@
 	box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15);
   left: 228px;
   top: -20px;
-}
+} */
 
-.swiper-slide__inner--active::before {
+/* .swiper-slide__inner--active::before {
 	position: absolute;
 	content: "";
 	display: block;
@@ -113,7 +203,7 @@
 	height: 505px;
 	left: -16px;
 	bottom: -9px;
-}
+} */
 
 .swiper-slide__description-1 {
 	display: grid;

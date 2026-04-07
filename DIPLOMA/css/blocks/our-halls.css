@@ -191,6 +191,12 @@
 	}
 }
 
+@media (width<=576px) {
+	.our-halls__show {
+		font-size: 19px;
+	}
+}
+
 .our-halls__show span {
 	color: #fff;
 }
@@ -209,6 +215,12 @@
 	flex-shrink: 0;
 }
 
+@media (width<=576px) {
+	.our-halls__show::before {
+		transform: scale(0.74);
+	}
+}
+
 .our-halls__show::after {
 	content: "";
 	display: block;
@@ -223,6 +235,12 @@
 	height: 70px;
 	background-color: #2e3441;
 	flex-shrink: 0;
+}
+
+@media (width<=576px) {
+	.our-halls__show::after {
+		transform: scale(0.74) rotate(180deg);
+	}
 }
 
 .our-halls__button {
@@ -302,7 +320,7 @@
 }
 
 .new-wrapper__grid-bp {
-	background-image: url(../../images/our-halls/current-hall-short.png);
+	background-image: url(../../images/our-halls/current-hall-short.webp);
 	aspect-ratio: 2814 / 1400;
 	background-size: cover;
 	background-position: center;
@@ -316,23 +334,23 @@
 
 
 .new-wrapper__grid-sp-1 {
-	background-image: url(../../images/our-halls/rest-hall-1.png);
+	background-image: url(../../images/our-halls/rest-hall-1.webp);
 }
 
 .new-wrapper__grid-sp-2 {
-	background-image: url(../../images/our-halls/rest-hall-2.png);
+	background-image: url(../../images/our-halls/rest-hall-2.webp);
 }
 
 .new-wrapper__grid-sp-3 {
-	background-image: url(../../images/our-halls/rest-hall-3.png);
+	background-image: url(../../images/our-halls/rest-hall-3.webp);
 }
 
 .new-wrapper__grid-sp-4 {
-	background-image: url(../../images/our-halls/rest-hall-4.png);
+	background-image: url(../../images/our-halls/rest-hall-4.webp);
 }
 
 .new-wrapper__grid-sp-5 {
-	background-image: url(../../images/our-halls/rest-hall-5.png);
+	background-image: url(../../images/our-halls/rest-hall-5.webp);
 }
 
 .new-wrapper__grid-sp-1,
