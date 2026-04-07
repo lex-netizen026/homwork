@@ -7,6 +7,19 @@
 		<link rel="shortcut icon" href="./icons/favicon.png" type="image/png" />
 		<script defer src="./js/index.js" type="module"></script>
 		<title>Diploma</title>
+		<style>
+			.our-advantages__card--mobile,
+			our-advantages__microphone--mobile {
+        width: 100%;
+				margin-bottom: 1em;
+
+			}
+			.oa-mobile__inner--left,
+			.oa-mobile__inner--right {
+				columns: 300px;
+				break-inside: avoid;
+			}
+		</style>
 	</head>
 	<body class="page__body">
 		<header class="header">
@@ -20,6 +33,7 @@
 								width="293"
 								height="67"
 								alt="Логотип караоке-бар Харизма"
+								title="Логотип караоке-бар Харизма"
 							/>
 						</a>
 						<div class="header__container" id="header__wrapper">
@@ -38,6 +52,8 @@
 											data-modal-link="map"
 											data-modal-speed="300"
 											id="point"
+											aria-label="Рядом с метро Лубянка"
+											title="Рядом с метро Лубянка"
 										>
 											<a class="info__link regular-15-fff" href="#point"
 												>м. Лубянка</a
@@ -48,7 +64,12 @@
 								<div class="header__info-right">
 									<ul class="info__right-list">
 										<li class="info__item-border--background">
-											<button class="info__link bold-13--fff" href="#">
+											<button
+												class="info__link bold-13--fff"
+												href="#"
+												aria-label="Наши залы"
+												title="Наши залы"
+											>
 												Наши&nbsp;залы
 											</button>
 										</li>
@@ -57,7 +78,8 @@
 												class="info__button bold-13--000"
 												data-modal-link="book"
 												data-modal-speed="300"
-												
+												aria-label="Забронировать"
+												title="Забронировать"
 											>
 												Забронировать
 											</button>
@@ -68,12 +90,24 @@
 						</div>
 						<div class="header__info-burger burger">
 							<div class="burger-inner">
-								<a href="#" class="menu__map-link" data-modal-link="map">
-									<img src="./icons/map-point-link.png" alt="Map" />
+								<a
+									href="#"
+									class="menu__map-link"
+									data-modal-link="map"
+									aria-label="Рядом с метро Лубянка"
+									title="Рядом с метро Лубянка"
+								>
+									<img
+										src="./icons/map-point-link.png"
+										width="60"
+										height="60"
+										alt="Карта"
+									/>
 								</a>
 								<button
 									class="info__burger"
 									aria-label="Открыть меню"
+									title="Открыть меню"
 									aria-expanded="false"
 									aria-controls="header__wrapper"
 								>
@@ -95,54 +129,43 @@
 			</div>
 		</header>
 		<main class="main">
-			<section class="first-screen container">
-				<img
-					class="karaoke"
-					width="1920"
-					height="1077"
-					src="../DIPLOMA/images/background.png"
-					alt=""
-				/>
-				<div class="hero__container">
-					<img
-						class="hero__ability-label"
-						src="../DIPLOMA/images/ability-label.png"
-						alt="Можно шуметь круглосуточно"
-					/>
-					<img
-						class="hero__girl-image"
-						src="./images/dancing-girl.png"
-						width="700px"
-						height="1247px"
-						alt="Танцующая девушка"
-					/>
-					<h1 class="hero__title regular-41-fff">
-						Арендуй Караоке-Зал до 10 человек
-					</h1>
-					<h2 class="hero__advertisement black-75-fff">
-						возьми алкоголь и еду с собой
-						<span class="hero__advertisement-place regular-15-fff"
-							>м. Лубянка</span
+			<section class="container hero-section">
+				<div class="hero__wrapper">
+					<div class="karaoke-image"></div>
+					<div class="hero__container">
+						<h1 class="hero__title regular-41-fff">
+							Арендуй Караоке-Зал до 10 человек
+						</h1>
+						<h2 class="hero__advertisement black-75-fff">
+							возьми алкоголь и еду с собой
+							<span class="hero__advertisement-place regular-15-fff"
+								>м. Лубянка</span
+							>
+						</h2>
+						<p class="hero__advertisement-place--bottom regular-15-fff">
+							м. Лубянка
+						</p>
+						<div class="hero__goals">
+							<ul class="hero__goals-list regular-18-fff">
+								<li class="hero__goal-item">Если хочешь попеть и оторваться</li>
+								<li class="hero__goal-item">Отдохнуть<br />после работы</li>
+								<li class="hero__goal-item hero__goal-item--last">
+									Хорошо<br />провести время
+								</li>
+							</ul>
+						</div>
+						<button
+							class="hero__book-button bold-13-252121"
+							data-modal-link="book"
+							data-modal-speed="300"
+							title="Забронировать онлайн"
+							aria-label="Забронировать онлайн"
 						>
-					</h2>
-					<div class="hero__goals">
-						<ul class="hero__goals-list regular-18-fff">
-							<li class="hero__goal-item">Если хочешь попеть и оторваться</li>
-							<li class="hero__goal-item">Отдохнуть<br />после работы</li>
-							<li class="hero__goal-item">Хорошо<br />провести время</li>
-						</ul>
+							Забронировать онлайн
+						</button>
+						<p class="hero__text bold-9-606571">Листайте вниз</p>
+						<a class="hero__link bold-9-f69020" href="#">Связаться с нами</a>
 					</div>
-					<button
-						class="hero__book-button bold-13-252121"
-						data-modal-link="book"
-						data-modal-speed="300"
-						title="Забронировать онлайн"
-						aria-label="Забронировать онлайн"
-					>
-						Забронировать онлайн
-					</button>
-					<p class="hero__text bold-9-606571">Листайте вниз</p>
-					<a class="hero__link bold-9-f69020" href="#">Связаться с нами</a>
 				</div>
 				<div class="hero__advantages">
 					<ul class="advantages__list">
@@ -161,6 +184,24 @@
 							Скидка в День Рождения
 						</li>
 					</ul>
+					<div class="advantages__girl">
+						<picture>
+							<source srcset="../DIPLOMA/images/dancing-girl.webp">
+							<img
+							class="hero__girl-image"
+							src="../DIPLOMA/images/dancing-girl.png"
+							width="700px"
+							height="1247px"
+							alt="Танцующая девушка"
+						/>
+						</picture>
+						
+						<img
+							class="hero__ability-label"
+							src="../DIPLOMA/images/ability-label.png"
+							alt="Можно шуметь круглосуточно"
+						/>
+					</div>
 				</div>
 			</section>
 			<section class="our-halls">
@@ -190,6 +231,8 @@
 								class="our-halls__button bold-13-252121"
 								data-modal-link="book"
 								data-modal-speed="300"
+								aria-label="Забронировать"
+								title="Забронировать"
 							>
 								Забронировать
 							</button>
@@ -197,52 +240,90 @@
 						<main class="our-halls__main">
 							<div class="our-halls__inner">
 								<div class="our-halls__current-hall" style="grid-area: one">
-									<img
-										src="../DIPLOMA/images/our-halls/current-hall-short.png"
-										width="1459"
-										height="832"
-										alt=""
-									/>
+									<picture>
+										<source
+											srcset="
+												../DIPLOMA/images/our-halls/current-hall-short.webp
+											"
+										/>
+										<img
+											src="../DIPLOMA/images/our-halls/current-hall-short.png"
+											width="1459"
+											height="832"
+											loading="lazy"
+											alt="Зал основной"
+										/>
+									</picture>
 								</div>
 								<div class="our-hall__current-hall" style="grid-area: two">
-									<img
-										src="../DIPLOMA/images/our-halls/rest-hall-1.png"
-										width="281"
-										height="168"
-										alt=""
-									/>
+									<picture>
+										<source
+											srcset="../DIPLOMA/images/our-halls/rest-hall-1.webp"
+										/>
+										<img
+											src="../DIPLOMA/images/our-halls/rest-hall-1.png"
+											width="281"
+											height="168"
+											loading="lazy"
+											alt="Зал 1"
+										/>
+									</picture>
 								</div>
 								<div class="our-hall__current-hall" style="grid-area: tree">
-									<img
-										src="../DIPLOMA/images/our-halls/rest-hall-2.png"
-										width="281"
-										height="168"
-										alt=""
-									/>
+									<picture>
+										<source
+											srcset="../DIPLOMA/images/our-halls/rest-hall-2.webp"
+										/>
+										<img
+											src="../DIPLOMA/images/our-halls/rest-hall-2.png"
+											width="281"
+											height="168"
+											loading="lazy"
+											alt="Зал 2"
+										/>
+									</picture>
 								</div>
 								<div class="our-hall__current-hall" style="grid-area: four">
-									<img
-										src="../DIPLOMA/images/our-halls/rest-hall-3.png"
-										width="281"
-										height="168"
-										alt=""
-									/>
+									<picture>
+										<source
+											srcset="../DIPLOMA/images/our-halls/rest-hall-3.webp"
+										/>
+										<img
+											src="../DIPLOMA/images/our-halls/rest-hall-3.png"
+											width="281"
+											height="168"
+											loading="lazy"
+											alt="Зал 3"
+										/>
+									</picture>
 								</div>
 								<div class="our-hall__current-hall" style="grid-area: five">
-									<img
-										src="../DIPLOMA/images/our-halls/rest-hall-4.png"
-										width="281"
-										height="168"
-										alt=""
-									/>
+									<picture>
+										<source
+											srcset="../DIPLOMA/images/our-halls/rest-hall-4.webp"
+										/>
+										<img
+											src="../DIPLOMA/images/our-halls/rest-hall-4.png"
+											width="281"
+											height="168"
+											loading="lazy"
+											alt="Зал 4"
+										/>
+									</picture>
 								</div>
 								<div class="our-hall__current-hall" style="grid-area: six">
-									<img
-										src="../DIPLOMA/images/our-halls/rest-hall-5.png"
-										width="281"
-										height="168"
-										alt=""
-									/>
+									<picture>
+										<source
+											srcset="../DIPLOMA/images/our-halls/rest-hall-5.webp"
+										/>
+										<img
+											src="../DIPLOMA/images/our-halls/rest-hall-5.png"
+											width="281"
+											height="168"
+											loading="lazy"
+											alt="Зал 5"
+										/>
+									</picture>
 								</div>
 							</div>
 						</main>
@@ -315,80 +396,196 @@
 			<section class="our-advantages">
 				<div class="container our-advantages__container">
 					<div class="our-advantages__wrapper">
-						<h2 class="our-advantages__title" style="grid-area: one">
-							Наши преимущества
-						</h2>
-						<h3
-							class="our-advantages__question regular-24-fff"
-							style="grid-area: two"
-						>
+						<div class="advantages__cards-title">
+							<h2 class="our-advantages__title">Наши преимущества</h2>
+							<h3 class="our-advantages__question regular-24-fff">
+								Почему гости выбирают нас
+							</h3>
+							<div class="advantages__cards">
+								<div class="our-advantages__card">
+									<p
+										class="our-advantages__card-text oa-text-1 extra-bold-18-fff"
+									>
+										Никакого дресс-контроля
+									</p>
+								</div>
+								<div class="our-advantages__card">
+									<p
+										class="our-advantages__card-text oa-text-2 extra-bold-18-fff"
+									>
+										~ 40.000 песен в сет листе
+									</p>
+									<p class="card-text__addition regular-16-c5c5c5">
+										Более 50,000 студийных фонограмм
+									</p>
+									<p class="card-text__addition regular-16-c5c5c5">
+										Ежемесячное обновления репертуара
+									</p>
+								</div>
+								<div class="our-advantages__card">
+									<p
+										class="our-advantages__card-text oa-text-3 extra-bold-18-fff"
+									>
+										Индивидуальные залы
+									</p>
+									<p class="card-text__addition regular-16-c5c5c5">
+										Только Ваша компания
+									</p>
+								</div>
+								<div class="our-advantages__card">
+									<p
+										class="our-advantages__card-text oa-text-4 extra-bold-18-fff"
+									>
+										Без депозита
+									</p>
+									<p class="card-text__addition regular-16-c5c5c5">
+										<span class="advantages__span">Мы не берем депозит</span>
+									</p>
+									<p class="card-text__addition regular-16-c5c5c5">
+										Оплата происходит за человека в час
+									</p>
+								</div>
+								<div class="our-advantages__card">
+									<p
+										class="our-advantages__card-text oa-text-5 extra-bold-18-fff"
+									>
+										В самом центре Москвы
+									</p>
+									<p class="card-text__addition regular-16-c5c5c5">
+										м. Лубянка
+									</p>
+								</div>
+								<div class="our-advantages__card">
+									<p
+										class="our-advantages__card-text oa-text-6 extra-bold-18-fff"
+									>
+										Нет пробкового сбора
+									</p>
+									<p
+										class="card-text__addition card-text__addition--another regular-16-c5c5c5"
+									>
+										Можно приносить с собой еду, напитки и алкоголь
+									</p>
+									<p class="without-collect regular-16-c5c5c5">
+										без пробкового сбора
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="advantages__micro">
+							<div class="our-advantages__microphone" aria-label="Микрофон" title="Микрофон"></div>
+							<button
+								class="our-advantages__button"
+								aria-label="Забронировать зал" title="Забронировать зал"
+								data-modal-link="book"
+								data-modal-speed="300"
+							>
+								Забронировать зал
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="our-advantages-mobile">
+				<div class="container oa-mobile-container">
+					<div class="oa-mobile__wrapper">
+						<h2 class="our-advantages__title">Наши преимущества</h2>
+						<h3 class="our-advantages__question regular-24-fff">
 							Почему гости выбирают нас
 						</h3>
-						<div class="our-advantages__card" style="grid-area: three">
-							<p class="our-advantages__card-text oa-text-1 extra-bold-18-fff">
-								Никакого дресс-контроля
-							</p>
+						<div class="oa-mobile__flex">
+							<div class="oa-mobile__inner">
+							<div class="oa-mobile__inner--left">
+								<div class="our-advantages__card our-advantages__card--mobile our-advantages__card--mobile-1">
+									<p
+										class="our-advantages__card-text oa-text-1 extra-bold-18-fff"
+									>
+										Никакого дресс-контроля
+									</p>
+								</div>
+								<div class="our-advantages__card our-advantages__card--mobile our-advantages__card--mobile-3">
+									<p
+										class="our-advantages__card-text oa-text-3 extra-bold-18-fff"
+									>
+										Индивидуальные залы
+									</p>
+									<p class="card-text__addition regular-16-c5c5c5">
+										Только Ваша компания
+									</p>
+								</div>
+								<div class="our-advantages__card our-advantages__card--mobile our-advantages__card--mobile-4">
+									<p
+										class="our-advantages__card-text oa-text-4 extra-bold-18-fff"
+									>
+										Без депозита
+									</p>
+									<p class="card-text__addition regular-16-c5c5c5">
+										<span class="advantages__span">Мы не берем депозит</span>
+									</p>
+									<p class="card-text__addition regular-16-c5c5c5">
+										Оплата происходит за человека в час
+									</p>
+								</div>
+								<div our-advantages__microphone--mobile">
+								<picture>
+									<source srcset="../DIPLOMA/images/microphone-image.webp">
+									<img src="../DIPLOMA/images/microphone-image.png" width="450" height="684" loading="lazy" alt="Микрофон">
+								</picture>
+								</div>
+							</div>
+							<div class="oa-mobile__inner--right">
+								<div class="our-advantages__card our-advantages__card--mobile
+								our-advantages__card--mobile-2">
+									<p
+										class="our-advantages__card-text oa-text-2 extra-bold-18-fff"
+									>
+										~ 40.000 песен в сет листе
+									</p>
+									<p class="card-text__addition regular-16-c5c5c5">
+										Более 50,000 студийных фонограмм
+									</p>
+									<p class="card-text__addition regular-16-c5c5c5">
+										Ежемесячное обновления репертуара
+									</p>
+								</div>
+								<div class="our-advantages__card our-advantages__card--mobile our-advantages__card--mobile-5">
+									<p
+										class="our-advantages__card-text oa-text-5 extra-bold-18-fff"
+									>
+										В самом центре Москвы
+									</p>
+									<p class="card-text__addition regular-16-c5c5c5">
+										м. Лубянка
+									</p>
+								</div>
+								<div class="our-advantages__card our-advantages__card--mobile our-advantages__card--mobile-6">
+									<p
+										class="our-advantages__card-text oa-text-6 extra-bold-18-fff"
+									>
+										Нет пробкового сбора
+									</p>
+									<p
+										class="card-text__addition card-text__addition--another regular-16-c5c5c5"
+									>
+										Можно приносить с собой еду, напитки и алкоголь
+									</p>
+									<p class="without-collect regular-16-c5c5c5">
+										без пробкового сбора
+									</p>
+								</div>
+							</div>
 						</div>
-						<div class="our-advantages__card" style="grid-area: four">
-							<p class="our-advantages__card-text oa-text-2 extra-bold-18-fff">
-								~ 40.000 песен в сет листе
-							</p>
-							<p class="card-text__addition regular-16-c5c5c5">
-								Более 50,000 студийных фонограмм
-							</p>
-							<p class="card-text__addition regular-16-c5c5c5">
-								Ежемесячное обновления репертуара
-							</p>
-						</div>
-						<div class="our-advantages__card" style="grid-area: five">
-							<p class="our-advantages__card-text oa-text-3 extra-bold-18-fff">
-								Индивидуальные залы
-							</p>
-							<p class="card-text__addition regular-16-c5c5c5">
-								Только Ваша компания
-							</p>
-						</div>
-						<div class="our-advantages__card" style="grid-area: six">
-							<p class="our-advantages__card-text oa-text-4 extra-bold-18-fff">
-								Без депозита
-							</p>
-							<p class="card-text__addition regular-16-c5c5c5">
-								<span class="advantages__span">Мы не берем депозит</span>
-							</p>
-							<p class="card-text__addition regular-16-c5c5c5">
-								Оплата происходит за человека в час
-							</p>
-						</div>
-						<div class="our-advantages__card" style="grid-area: seven">
-							<p class="our-advantages__card-text oa-text-5 extra-bold-18-fff">
-								В самом центре Москвы
-							</p>
-							<p class="card-text__addition regular-16-c5c5c5">м. Лубянка</p>
-						</div>
-						<div class="our-advantages__card" style="grid-area: eight">
-							<p class="our-advantages__card-text oa-text-6 extra-bold-18-fff">
-								Нет пробкового сбора
-							</p>
-							<p class="card-text__addition regular-16-c5c5c5">
-								Можно приносить с собой еду, напитки и алкоголь<span
-									class="advantages__span"
-								>
-									без пробкового сбора</span
-								>
-							</p>
-						</div>
-						<div
-							class="our-advantages__microphone"
-							style="grid-area: nine"
-						></div>
 						<button
-							class="our-advantages__button"
+							class="our-advantages__button our-advantages__button--mobile"
+							aria-label="Забронировать зал"
+							title="Забронировать зал"
 							data-modal-link="book"
 							data-modal-speed="300"
-							style="grid-area: ten"
 						>
 							Забронировать зал
 						</button>
+						</div>
+						
 					</div>
 				</div>
 			</section>
@@ -401,7 +598,7 @@
 						<div class="announcement">
 							<div class="announcement__steps">
 								<h3 class="steps__description regular-24-fff">
-									бронирование по шагам в чат-боте
+									бронирование по шагам в чат&nbsp;-боте
 								</h3>
 								<p class="steps__show medium-24-fff"><span>1</span>из 9</p>
 							</div>
@@ -410,13 +607,13 @@
 							<div class="swiper-container">
 								<div class="swiper-slide">
 									<div class="swiper-slide__inner">
-										<img
+										<!-- <img
 											src="../../DIPLOMA/images/how-to-book/step-1.png"
 											class="swiper-slide__imege"
 											width="252"
 											height="489"
 											alt="Первый шаг - Перейти в чат-бот fh_harizma_bot"
-										/>
+										/> -->
 									</div>
 									<p
 										class="swiper-slide__description-1 medium-15-fff"
@@ -431,13 +628,16 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="swiper-slide__inner">
-										<img
+										<picture>
+											<source srcset="../../DIPLOMA/images/how-to-book/step-2.webp">
+											<img
 											src="../../DIPLOMA/images/how-to-book/step-2.png"
 											class="swiper-slide__imege"
 											width="252"
 											height="489"
 											alt="Первый шаг - Перейти в чат-бот fh_harizma_bot"
 										/>
+										</picture>
 									</div>
 									<p class="swiper-slide__description-2 medium-15-fff">
 										Выбрать колличество человек
@@ -445,13 +645,17 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="swiper-slide__inner swiper-slide__inner--active">
-										<img
+										<picture>
+											<source srcset="../../DIPLOMA/images/how-to-book/step-3.webp">
+											<img
 											src="../../DIPLOMA/images/how-to-book/step-3.png"
 											class="swiper-slide__imege"
 											width="252"
 											height="489"
 											alt="Первый шаг - Перейти в чат-бот fh_harizma_bot"
 										/>
+										</picture>
+										
 									</div>
 									<p class="swiper-slide__description-3 medium-15-fff">
 										Выбрать колличество часов посещения
@@ -459,13 +663,16 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="swiper-slide__inner">
-										<img
+										<picture>
+											<source srcset="../../DIPLOMA/images/how-to-book/step-4.webp">
+                      <img
 											src="../../DIPLOMA/images/how-to-book/step-4.png"
 											class="swiper-slide__imege"
 											width="252"
 											height="489"
 											alt="Первый шаг - Перейти в чат-бот fh_harizma_bot"
 										/>
+										</picture>
 									</div>
 									<p class="swiper-slide__description-4 medium-15-fff">
 										Выбрать дату
@@ -473,13 +680,16 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="swiper-slide__inner">
-										<img
+										<picture>
+											<source srcset="../../DIPLOMA/images/how-to-book/step-5.webp">
+											<img
 											src="../../DIPLOMA/images/how-to-book/step-5.png"
 											class="swiper-slide__imege"
 											width="252"
 											height="489"
 											alt="Первый шаг - Перейти в чат-бот fh_harizma_bot"
 										/>
+										</picture>
 									</div>
 									<p class="swiper-slide__description-5 medium-15-fff">
 										Выбрать время старта брони
@@ -487,18 +697,20 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="swiper-slide__inner">
-										<img
+										<!-- <img
 											src="../../DIPLOMA/images/how-to-book/step-6.png"
 											class="swiper-slide__imege"
 											width="56"
 											height="489"
 											alt="Первый шаг - Перейти в чат-бот fh_harizma_bot"
-										/>
+										/> -->
 									</div>
 									<p class="swiper-slide__description-1 medium-15-fff"></p>
 								</div>
 							</div>
+							
 						</div>
+						<p class="steps__show--bottom medium-24-fff"><span>1</span>из 9</p>
 					</div>
 				</div>
 			</section>
@@ -583,17 +795,21 @@
 									</p>
 								</details>
 							</div>
-							<div class="faq-addition">
-								<p class="faq-addition__carpet black-32-fff">
-									В нашем заведении Бельгийский ковролин. На входе выдают
-									индивидуально запакованные тапочки, в которые необходимо
+							<div class="faq-addition" title="тапочки">
+								<div class="faq-addition__wrapper">
+                  <p class="faq-addition__carpet black-32-fff">
+									В нашем заведении Бельгийский ковролин. На входе выдают <strong class="carpet-text__accent">индивидуально запакованные тапочки,</strong>
+									 в которые необходимо
 									переобуться.
-								</p>
+								  </p>
+								</div>
 								<button
 									class="faq__button"
 									style="grid-area: ten"
 									data-modal-link="book"
 									data-modal-speed="300"
+									aria-label="Забронировать зал"
+									title="Забронировать зал"
 								>
 									Забронировать зал
 								</button>
@@ -615,9 +831,10 @@
 								width="293"
 								height="67"
 								alt="Логотип караоке-бар Харизма"
+								title="Логотип караоке-бар Харизма"
 							/>
 						</a>
-						<a class="info__phone regular-15-fff" href="tel:+380979709090"
+						<a class="info__phone info__phone-footer regular-15-fff" href="tel:+380979709090"
 							>+38 (097) 970-90-90
 						</a>
 						<p class="footer__text">Пн — Вс круглосуточно</p>
@@ -632,6 +849,69 @@
 						<button class="footer__button bold-13--fff" href="#">
 							Построить маршрут
 						</button>
+					</div>
+					<div class="footer__mobile">
+						<a class="logo header__logo footer__logo" href="#">
+							<img
+								class="logo__img"
+								src="./icons/logo.svg"
+								width="293"
+								height="67"
+								alt="Логотип караоке-бар Харизма"
+							/>
+						</a>
+						<div class="footer__mobile-container">
+							<div class="info footer__info">
+								<div class="header__info-left">
+									<ul class="info__left-list">
+										<li class="info__phone">
+											<a
+												class="info__link regular-15-fff"
+												href="tel:+380979709090"
+												>+38 (097) 970-90-90
+											</a>
+										</li>
+										<li
+											class="info__map"
+											data-modal-link="map"
+											data-modal-speed="300"
+											id="point"
+											aria-label="Рядом с метро Лубянка"
+											title="Рядом с метро Лубянка"
+										>
+											<a class="info__link regular-15-fff" href="#point"
+												>м. Лубянка</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="header__info-right">
+									<ul class="info__right-list">
+										<li class="info__item-border--background">
+											<button
+												class="info__link bold-13--fff"
+												href="#"
+												aria-label="Наши залы"
+												title="Наши залы"
+											>
+												Наши&nbsp;залы
+											</button>
+										</li>
+										<li class="info__item-border--white">
+											<button
+												class="info__button bold-13--000"
+												data-modal-link="book"
+												data-modal-speed="300"
+												aria-label="Забронировать"
+												title="Забронировать"
+											>
+												Забронировать
+											</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
