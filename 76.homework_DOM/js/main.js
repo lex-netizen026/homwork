@@ -58,6 +58,7 @@ const todosNew = document.querySelector('.todos')
 const createTodoElement = (todo) => {
   const li = document.createElement('li');
   li.classList.add('todo')
+  li.dataset.id = todo[todoKeys.id]
 
   li.innerHTML = `
     <div class="todo-text">${todo.text}</div>
@@ -72,6 +73,8 @@ const createTodoElement = (todo) => {
 	if (initialTodo) {
 		initialTodo.remove();
 	}
+
+
 
   const completeBtn = li.querySelector(".button-complete");
 	completeBtn.addEventListener("click", () => {
@@ -88,6 +91,7 @@ const createTodoElement = (todo) => {
 	});
 
   return li;
+
 }
 
 // Создаем функцию handleCreateTodo(todos, text), которая будет вызывать createTodo и createTodoElement
@@ -109,4 +113,11 @@ form.addEventListener("submit", (e) => {
 	input.value = "";
 });
 
+/////////////////////////////////////////////////////////////////////
+
+// todosNew.addEventListener('click', event => {
+//   const todo = event.target.closest('.todo');
+//   if (!todo) return;
+//   console.log(todo)
+// })
 
