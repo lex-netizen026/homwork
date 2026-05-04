@@ -1,8 +1,14 @@
 import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
 import Modal from "./modal.js";
-import "./our-halls.js";
+import { initOurHalls } from "./our-halls.js";
+import { initHowToBook } from "./how-to-book.js";
+import "./footer.js";
 
+document.addEventListener("DOMContentLoaded", () => {
+	initOurHalls();
+	initHowToBook();
+});
 
 try {
 	const headerFixed = new HeaderFixed({
