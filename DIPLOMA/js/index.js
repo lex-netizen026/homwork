@@ -43,3 +43,9 @@ try {
 } catch (error) {
 	console.error(error);
 }
+
+document.querySelector(".info__link-halls").addEventListener("click", () => {
+	document.querySelector("#our-halls").scrollIntoView({
+		behavior: "smooth",
+	});
+});
