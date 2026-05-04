@@ -6,9 +6,9 @@
 /* blocks */
 @import "./blocks/header.css";
 @import "./blocks/hero.css";
-@import "./blocks/our-halls.css";
+@import "./blocks/our-halls-v2.css";
 @import "./blocks/our-advantages.css";
-@import "./blocks/how-to-book.css";
+@import "./blocks/htbn.css";
 @import "./blocks/faq.css";
 @import "./blocks/footer.css";
 @import "./blocks/modal.css";

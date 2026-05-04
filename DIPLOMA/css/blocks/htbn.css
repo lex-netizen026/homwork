@@ -1,0 +1,357 @@
+.htbn__container {
+	/* position: relative; */
+	max-width: 100%;
+	height: 1000px;
+	background-image: url(../../images/how-to-book-background.png);
+	background-size: 100% 1000px;
+}
+
+@media (width <= 992px) {
+	.htbn__container {
+		height: 1200px;
+	}
+}
+
+
+.htbn-wrapper {
+  margin-left: 51px;
+	min-width: 100%;
+}
+
+@media (width <= 768px) {
+	.htbn-wrapper {
+		margin-left: 0;
+	}
+}
+
+
+.htbn__title {
+  margin-top: 109px;
+}
+
+@media (width <= 1300px) {
+	.htbn__title {
+		font-size: 55px;
+	}
+}
+
+@media (width <= 992px) {
+	.htbn__title {
+		font-size: 45px;
+		max-width: 650px;
+	}
+}
+
+@media (width <= 768px) {
+	.htbn__title {
+		max-width: 500px;
+	}
+}
+
+@media (width <= 576px) {
+	.htbn__title {
+		font-size: 36px;
+		max-width: 437px;
+	}
+}
+
+@media (width <= 576px) {
+	.htbn__title {
+		width: 100%;
+	}
+}
+
+@media (width <= 400px) {
+	.htbn__title {
+		font-size: 32px;
+	}
+}
+
+.announcement-buttons {
+	margin-top: 13px;
+	margin-right: 50px;
+}
+
+.announce__controller {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media (width <= 768px) {
+	.steps__description {
+		font-size: 21px;
+	}
+}
+
+@media (width <= 576px) {
+	.steps__description {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 992px) {
+	.announce__controller .htbn-top-counter {
+		display: none;
+	}
+}
+
+@media (min-width: 993px) {
+	.htbn-wrapper .htbn-bottom-counter {
+		display: none;
+	}
+}
+
+
+.htbn-wrapper__counter {
+	display: flex;
+	margin: 20px 0px 20px 0;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+.mobile-prev,
+.mobile-next {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 1px solid #282b32;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20px;
+}
+
+.mobile-prev,
+.mobile-next {
+	transition: 0.2s;
+}
+
+.mobile-prev.is-active,
+.mobile-next.is-active {
+	background-color: #282b32;
+}
+
+.mobile-prev {
+	background-image: url(../../icons/our-halls-arrow-left-icon.svg);
+}
+
+.mobile-next {
+	background-image: url(../../icons/our-halls-arrow-left-icon.svg);
+	transform: rotate(180deg);
+}
+
+@media (width<=576px) {
+  .mobile-next {
+		transform: scale(0.74) rotate(180deg);
+	}
+}
+
+@media (width<=576px) {
+	.mobile-prev {
+		transform: scale(0.74);
+	}
+}
+
+.htbn__counter .htbn-span-current {
+	color: #fff;
+	padding-right: 10px;
+}
+
+.htbn__counter .htbn-span-total {
+	padding-left: 10px;
+}
+
+
+/* swiper */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+
+.htbn-slider__body {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.htbn-slider__container {
+	height: 80%;
+}
+
+.htbn .swiper {
+	width: 100%;
+	padding: 20px 0px 50px;
+}
+
+.htbn .swiper-wrapper {
+	padding-bottom: 100px;
+	margin-top: 56px;
+}
+
+.htbn .swiper-slide {
+	position: relative;
+	bottom: 0px;
+	width: 252px;
+	height: 489px;
+	/* overflow: hidden; */
+	user-select: none;
+	margin-bottom: 16px;
+	
+}
+
+.htbn .swiper-slide::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	/* background: rgba(98, 98, 98, 0.8);
+	mix-blend-mode: multiply; */
+  z-index: 1;
+}
+
+.htbn .swiper-slide-active::after {
+	background: url(../../images/how-to-book/ipone-frame.svg) center/contain no-repeat;
+	transform: scale(1.1);
+}
+
+.slide-badge {
+	position: absolute;
+	top: -20px;
+	right: -30px;
+
+	width: 61px;
+	height: 61px;
+
+	background: #f69020;
+	color: #fff;
+
+	border-radius: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-weight: 700;
+	font-size: 16px;
+
+	z-index: 3;
+}
+
+.htbn .swiper-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+	opacity: 0.5;
+}
+
+.htbn .swiper-slide p {
+	position: absolute;
+	left: 150px;
+	bottom: -110px;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	width: max-content;
+}
+
+.htbn .swiper-slide-1 p {
+	bottom: -140px;
+	left: 115px;
+}
+
+.htbn .swiper-slide-4 p {
+
+	left: 115px;
+}
+
+.htbn .swiper-slide-active {
+	position: relative;
+}
+
+
+
+.htbn .swiper-slide-active img {
+	opacity: 1;
+}
+
+.htbn .swiper-slide-active p {
+	opacity: 1;
+}
+
+.htbn .swiper-slide__description-1 {
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.description__span {
+	padding-left: 50px;
+}
+
+.swiper-slide__description-2,
+.swiper-slide__description-3,
+.swiper-slide__description-4,
+.swiper-slide__description-5,
+.swiper-slide__description-6
+ {
+  display: flex;
+	flex-direction: row;
+  align-items:normal;
+	justify-content: start;
+  flex-wrap: nowrap;
+  gap: 18px;
+	max-width: 250px;
+}
+
+.swiper-slide__description-1::before {
+  content: "";
+  display: block;
+  background: url(../../icons/how-to-book-icons/enter-icon.svg);
+  width: 32px;
+  height: 32px;
+	flex-shrink: 0;
+}
+
+.swiper-slide__description-2::before {
+  content: "";
+  display: block;
+  background: url(../../icons/how-to-book-icons/crowd-icon.svg);
+  width: 41px;
+  height: 41px;
+	flex-shrink: 0;
+}
+
+.swiper-slide__description-3::before {
+  content: "";
+  display: block;
+  background: url(../../icons/how-to-book-icons/time-icon.svg);
+  width: 41px;
+  height: 41px;
+	flex-shrink: 0;
+}
+
+.swiper-slide__description-4::before {
+  content: "";
+  display: block;
+  background: url(../../icons/how-to-book-icons/calendar-icon.svg);
+  width: 38px;
+  height: 38px;
+	flex-shrink: 0;
+}
+
+.swiper-slide__description-5::before {
+  content: "";
+  display: block;
+  background: url(../../icons/how-to-book-icons/stopwatch-icon.svg);
+  width: 41px;
+  height: 41px;
+	flex-shrink: 0;
+}

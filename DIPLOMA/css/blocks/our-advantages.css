@@ -8,7 +8,7 @@
 	position: relative;
 	max-width: 100%;
 	min-height: 1042px;
-	background-image: url(../../images/our-advantages-backgrond.png);
+	background-image: url(../../images/our-advantages-background.png);
 	background-size: 100% 1042px;
 }
 
@@ -37,11 +37,6 @@
 	flex-grow: 1;
 }
 
-/* @media (width <= 1450px) {
-	.advantages__cards-title {
-		flex-grow: initial;
-	}
-} */
 
 .our-advantages__title {
 	margin-top: 97px;
@@ -341,7 +336,7 @@
 .our-advantages__microphone {
 	width: 450px;
 	height: 684px;
-	background-image: url(../../images/microphone-image.png);
+	background-image: url(../../images/microphone-image.webp);
 	flex-shrink: 0;
 }
 
@@ -351,14 +346,6 @@
 	}
 }
 
-/* @media (width <= 1220px) {
-	.our-advantages__microphone {
-		position: sticky;
-		top: 0px;
-		left: 0;
-		right: 0;
-	}
-} */
 
 .our-advantages__button {
 	border-radius: 60px;
@@ -383,8 +370,7 @@
 }
 
 /* мобильная версия */
-/* мобильная версия */
-/* мобильная версия */
+
 
 @media (width > 1100px) {
 	.our-advantages-mobile {

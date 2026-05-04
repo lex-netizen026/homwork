@@ -1,6 +1,6 @@
 .hero__wrapper {
 	position: relative;
-	height: 1000px;
+	height: 902px;
 
 }
 
@@ -573,7 +573,7 @@
 
 @media (width <= 1500px) {
 	.hero__ability-label {
-		top: 850px;
+		top: -315px;
 		left: 400px;
 	}
 }
@@ -587,7 +587,6 @@
 @media (width <= 1130px) {
 	.hero__ability-label {
 		transform: scale(0.8);
-		top: -315px;
 		left: clamp(23.75rem, -33.672rem + 87.5vw, 28.125rem);
 	}
 }

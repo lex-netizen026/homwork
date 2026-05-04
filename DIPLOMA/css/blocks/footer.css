@@ -1,3 +1,5 @@
+
+
 .footer-container {
 	position: relative;
 	max-width: 100%;
@@ -87,4 +89,68 @@
 	width: 232px;
 	height: 60px;
 	background-color: #ffffff00;
+}
+
+
+
+.scroll-top {
+	position: fixed;
+	right: 50px;
+	bottom: 335px;
+
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: none;
+
+
+	background: #2e3441;
+
+
+	color: #000;
+	font-size: 24px;
+	cursor: pointer;
+
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(20px);
+
+	transition: all 0.3s ease;
+	z-index: 1000;
+}
+
+@media (width <= 992px) {
+	.scroll-top {
+		bottom: 235px;
+	}
+}
+
+.scroll-top::before {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+
+	background: url(../../icons/our-halls-arrow-left-icon.svg) center / contain no-repeat;
+
+	margin-left: 22px;
+	margin-top: 22px;
+
+	transform: rotate(90deg);
+}
+
+
+/* активное состояние */
+.scroll-top--visible {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.footer-text {
+	position: absolute;
+	width: 150px;
+	right: -40px;
+	bottom: -80px;
+	transform: rotate(-90deg);
 }
